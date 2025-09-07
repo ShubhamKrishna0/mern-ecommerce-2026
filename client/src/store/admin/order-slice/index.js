@@ -10,7 +10,7 @@ export const getAllOrdersForAdmin = createAsyncThunk(
   "/order/getAllOrdersForAdmin",
   async () => {
     const response = await axios.get(
-      `https://mern-ecommerce-backend-tgw0.onrender.com/admin/orders/get`
+      `https://mern-ecommerce-backend-tgw0.onrender.com/api/admin/orders/get`
     );
 
     return response.data;
@@ -21,7 +21,7 @@ export const getOrderDetailsForAdmin = createAsyncThunk(
   "/order/getOrderDetailsForAdmin",
   async (id) => {
     const response = await axios.get(
-      `https://mern-ecommerce-backend-tgw0.onrender.com/admin/orders/details/${id}`
+      `https://mern-ecommerce-backend-tgw0.onrender.com/api/admin/orders/details/${id}`
     );
 
     return response.data;
@@ -32,7 +32,7 @@ export const updateOrderStatus = createAsyncThunk(
   "/order/updateOrderStatus",
   async ({ id, orderStatus }) => {
     const response = await axios.put(
-      `https://mern-ecommerce-backend-tgw0.onrender.com/admin/orders/update/${id}`,
+      `https://mern-ecommerce-backend-tgw0.onrender.com/api/admin/orders/update/${id}`,
       {
         orderStatus,
       }

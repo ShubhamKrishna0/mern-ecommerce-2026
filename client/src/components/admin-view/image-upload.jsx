@@ -52,7 +52,7 @@ async function uploadImageToCloudinary() {
 
   try {
     const response = await axios.post(
-      "https://mern-ecommerce-backend-tgw0.onrender.com/admin/products/upload-image",
+      "https://mern-ecommerce-backend-tgw0.onrender.com/api/admin/products/upload-image",
       data
     );
     console.log(response, "response");
