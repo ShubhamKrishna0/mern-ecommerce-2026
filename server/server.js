@@ -33,7 +33,7 @@ const PORT = process.env.PORT || 5000;
 // CORS configuration
 const allowedOrigins = [
   'http://localhost:5173', // Local development
-  'https://mern-ecommerce-backend-tgw0.onrender.com', // Your deployed frontend
+  'https://mern-ecommerce-frontend-nxe6.onrender.com', // Your deployed frontend
 ];
 
 app.use(
