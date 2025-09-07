@@ -10,7 +10,7 @@ export const getFeatureImages = createAsyncThunk(
   "/order/getFeatureImages",
   async () => {
     const response = await axios.get(
-      `https://mern-ecommerce-backend-tgw0.onrender.com/api/common/feature/get`
+      `https://mern-ecommerce-backend-tgw0.onrender.com/common/feature/get`
     );
 
     return response.data;
@@ -24,7 +24,7 @@ export const addFeatureImage = createAsyncThunk(
     formData.append("image", file); // 👈 Send the file directly
 
     const response = await axios.post(
-      `https://mern-ecommerce-backend-tgw0.onrender.com/api/common/feature/add`,
+      `https://mern-ecommerce-backend-tgw0.onrender.com/common/feature/add`,
       formData,
       { headers: { "Content-Type": "multipart/form-data" } }
     );
